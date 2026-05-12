@@ -1,0 +1,271 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="ru">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>\uc0\u1041 \u1077 \u1082 \u1090 \u1091 \u1088 \u1089 \u1091 \u1085  \u1059 \u1083 \u1072 \u1088  | \u1056 \u1077 \u1079 \u1102 \u1084 \u1077 </title>\
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">\
+    <style>\
+        :root \{\
+            --bg-color: #0a192f;\
+            --accent-blue: #3a7bd5;\
+            --glass-bg: rgba(255, 255, 255, 0.05);\
+            --glass-border: rgba(255, 255, 255, 0.1);\
+            --text-main: #e6f1ff;\
+            --text-dim: #8892b0;\
+        \}\
+\
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+        \}\
+\
+        body \{\
+            font-family: 'Inter', sans-serif;\
+            background: radial-gradient(circle at top right, #112240, #0a192f);\
+            color: var(--text-main);\
+            line-height: 1.6;\
+            min-height: 100vh;\
+            padding: 40px 20px;\
+        \}\
+\
+        .container \{\
+            max-width: 900px;\
+            margin: 0 auto;\
+        \}\
+\
+        /* \uc0\u1069 \u1092 \u1092 \u1077 \u1082 \u1090  \u1089 \u1090 \u1077 \u1082 \u1083 \u1072  */\
+        .glass-card \{\
+            background: var(--glass-bg);\
+            backdrop-filter: blur(12px);\
+            -webkit-backdrop-filter: blur(12px);\
+            border: 1px solid var(--glass-border);\
+            border-radius: 20px;\
+            padding: 40px;\
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);\
+            margin-bottom: 30px;\
+        \}\
+\
+        header \{\
+            text-align: center;\
+            margin-bottom: 50px;\
+        \}\
+\
+        h1 \{\
+            font-size: 2.5rem;\
+            letter-spacing: -1px;\
+            margin-bottom: 10px;\
+            background: linear-gradient(to right, #fff, var(--accent-blue));\
+            -webkit-background-clip: text;\
+            -webkit-text-fill-color: transparent;\
+        \}\
+\
+        .status \{\
+            color: var(--accent-blue);\
+            font-weight: 600;\
+            text-transform: uppercase;\
+            letter-spacing: 2px;\
+            font-size: 0.9rem;\
+        \}\
+\
+        .contact-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\
+            gap: 15px;\
+            margin-top: 25px;\
+            border-top: 1px solid var(--glass-border);\
+            padding-top: 25px;\
+        \}\
+\
+        .contact-item \{\
+            font-size: 0.9rem;\
+            color: var(--text-dim);\
+        \}\
+\
+        .contact-item b \{\
+            color: var(--text-main);\
+        \}\
+\
+        h2 \{\
+            font-size: 1.4rem;\
+            margin-bottom: 20px;\
+            display: flex;\
+            align-items: center;\
+            color: var(--accent-blue);\
+        \}\
+\
+        h2::after \{\
+            content: "";\
+            height: 1px;\
+            flex-grow: 1;\
+            background: var(--glass-border);\
+            margin-left: 20px;\
+        \}\
+\
+        .job \{\
+            margin-bottom: 30px;\
+        \}\
+\
+        .job-header \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: baseline;\
+            flex-wrap: wrap;\
+        \}\
+\
+        .job-title \{\
+            font-weight: 600;\
+            font-size: 1.1rem;\
+            color: #fff;\
+        \}\
+\
+        .job-date \{\
+            font-size: 0.85rem;\
+            color: var(--text-dim);\
+        \}\
+\
+        .job-company \{\
+            color: var(--accent-blue);\
+            font-size: 0.95rem;\
+            margin-bottom: 10px;\
+        \}\
+\
+        ul \{\
+            list-style: none;\
+        \}\
+\
+        ul li \{\
+            position: relative;\
+            padding-left: 20px;\
+            margin-bottom: 8px;\
+            color: var(--text-dim);\
+            font-size: 0.95rem;\
+        \}\
+\
+        ul li::before \{\
+            content: "\uc0\u9657 ";\
+            position: absolute;\
+            left: 0;\
+            color: var(--accent-blue);\
+        \}\
+\
+        .skills-tag \{\
+            display: flex;\
+            flex-wrap: wrap;\
+            gap: 10px;\
+        \}\
+\
+        .tag \{\
+            background: rgba(58, 123, 213, 0.1);\
+            border: 1px solid var(--accent-blue);\
+            color: var(--accent-blue);\
+            padding: 5px 15px;\
+            border-radius: 50px;\
+            font-size: 0.85rem;\
+            transition: 0.3s;\
+        \}\
+\
+        .tag:hover \{\
+            background: var(--accent-blue);\
+            color: #fff;\
+        \}\
+\
+        @media (max-width: 600px) \{\
+            .glass-card \{ padding: 25px; \}\
+            h1 \{ font-size: 1.8rem; \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+<div class="container">\
+    <header class="glass-card">\
+        <span class="status">\uc0\u1040 \u1076 \u1084 \u1080 \u1085 \u1080 \u1089 \u1090 \u1088 \u1072 \u1090 \u1086 \u1088  / \u1057 \u1090 \u1072 \u1088 \u1096 \u1080 \u1081  \u1072 \u1076 \u1084 \u1080 \u1085 \u1080 \u1089 \u1090 \u1088 \u1072 \u1090 \u1086 \u1088 </span>\
+        <h1>\uc0\u1041 \u1077 \u1082 \u1090 \u1091 \u1088 \u1089 \u1091 \u1085  \u1059 \u1083 \u1072 \u1088  \u1069 \u1088 \u1080 \u1082 \u1086 \u1074 \u1080 \u1095 </h1>\
+        <p style="color: var(--text-dim); max-width: 600px; margin: 0 auto;">\
+            \uc0\u1054 \u1087 \u1099 \u1090 \u1085 \u1099 \u1081  \u1072 \u1076 \u1084 \u1080 \u1085 \u1080 \u1089 \u1090 \u1088 \u1072 \u1090 \u1086 \u1088  \u1089  \u1085 \u1072 \u1074 \u1099 \u1082 \u1086 \u1084  \u1082 \u1086 \u1085 \u1090 \u1088 \u1086 \u1083 \u1103  \u1082 \u1072 \u1095 \u1077 \u1089 \u1090 \u1074 \u1072  \u1089 \u1077 \u1088 \u1074 \u1080 \u1089 \u1072 . \u1062 \u1077 \u1083 \u1100 : \u1075 \u1088 \u1072 \u1084 \u1086 \u1090 \u1085 \u1072 \u1103  \u1082 \u1086 \u1086 \u1088 \u1076 \u1080 \u1085 \u1072 \u1094 \u1080 \u1103  \u1089 \u1084 \u1077 \u1085 \u1099  \u1080  \u1088 \u1077 \u1096 \u1077 \u1085 \u1080 \u1077  \u1083 \u1102 \u1073 \u1099 \u1093  \u1086 \u1088 \u1075 \u1072 \u1085 \u1080 \u1079 \u1072 \u1094 \u1080 \u1086 \u1085 \u1085 \u1099 \u1093  \u1074 \u1086 \u1087 \u1088 \u1086 \u1089 \u1086 \u1074  \u1085 \u1072  \u1074 \u1099 \u1089 \u1096 \u1077 \u1084  \u1091 \u1088 \u1086 \u1074 \u1085 \u1077 .\
+        </p>\
+        \
+        <div class="contact-grid">\
+            <div class="contact-item">\uc0\u55357 \u56525  <b>\u1041 \u1080 \u1096 \u1082 \u1077 \u1082 </b></div>\
+            <div class="contact-item">\uc0\u55357 \u56542  <b>0559 46 36 26</b></div>\
+            <div class="contact-item">\uc0\u55357 \u56517  <b>22.12.2003 (22 \u1075 \u1086 \u1076 \u1072 )</b></div>\
+        </div>\
+    </header>\
+\
+    <section class="glass-card">\
+        <h2>\uc0\u1054 \u1087 \u1099 \u1090  \u1088 \u1072 \u1073 \u1086 \u1090 \u1099 </h2>\
+        \
+        <div class="job">\
+            <div class="job-header">\
+                <div class="job-title">\uc0\u1054 \u1087 \u1077 \u1088 \u1072 \u1090 \u1086 \u1088  / \u1057 \u1087 \u1077 \u1094 \u1080 \u1072 \u1083 \u1080 \u1089 \u1090  \u1054 \u1050 \u1050  / \u1057 \u1090 \u1072 \u1088 \u1096 \u1080 \u1081  \u1072 \u1076 \u1084 \u1080 \u1085 \u1080 \u1089 \u1090 \u1088 \u1072 \u1090 \u1086 \u1088 </div>\
+                <div class="job-date">2024 \'97 \uc0\u1053 \u1072 \u1089 \u1090 . \u1074 \u1088 \u1077 \u1084 \u1103 </div>\
+            </div>\
+            <div class="job-company">Medical Assistance Group</div>\
+            <ul>\
+                <li>\uc0\u1050 \u1086 \u1086 \u1088 \u1076 \u1080 \u1085 \u1072 \u1094 \u1080 \u1103  \u1088 \u1072 \u1073 \u1086 \u1090 \u1099  \u1089 \u1086 \u1090 \u1088 \u1091 \u1076 \u1085 \u1080 \u1082 \u1086 \u1074  \u1089 \u1084 \u1077 \u1085 \u1099  \u1080  \u1074 \u1077 \u1076 \u1077 \u1085 \u1080 \u1077  \u1086 \u1090 \u1095 \u1077 \u1090 \u1085 \u1086 \u1089 \u1090 \u1080 .</li>\
+                <li>\uc0\u1050 \u1086 \u1085 \u1090 \u1088 \u1086 \u1083 \u1100  \u1082 \u1072 \u1095 \u1077 \u1089 \u1090 \u1074 \u1072  \u1088 \u1072 \u1079 \u1075 \u1086 \u1074 \u1086 \u1088 \u1086 \u1074  \u1080  \u1089 \u1086 \u1073 \u1083 \u1102 \u1076 \u1077 \u1085 \u1080 \u1103  \u1089 \u1082 \u1088 \u1080 \u1087 \u1090 \u1086 \u1074 .</li>\
+                <li>\uc0\u1056 \u1072 \u1073 \u1086 \u1090 \u1072  \u1089  \u1074 \u1086 \u1079 \u1088 \u1072 \u1078 \u1077 \u1085 \u1080 \u1103 \u1084 \u1080  \u1080  \u1078 \u1072 \u1083 \u1086 \u1073 \u1072 \u1084 \u1080  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1086 \u1074 .</li>\
+            </ul>\
+        </div>\
+\
+        <div class="job">\
+            <div class="job-header">\
+                <div class="job-title">\uc0\u1040 \u1076 \u1084 \u1080 \u1085 \u1080 \u1089 \u1090 \u1088 \u1072 \u1090 \u1086 \u1088 </div>\
+                <div class="job-date">\uc0\u1050 \u1072 \u1088 \u1072 \u1082 \u1086 \u1083 </div>\
+            </div>\
+            <div class="job-company">\uc0\u1050 \u1083 \u1091 \u1073  \'abGreen Club\'bb</div>\
+            <ul>\
+                <li>\uc0\u1057 \u1086 \u1079 \u1076 \u1072 \u1085 \u1080 \u1077  \u1091 \u1102 \u1090 \u1085 \u1086 \u1081  \u1072 \u1090 \u1084 \u1086 \u1089 \u1092 \u1077 \u1088 \u1099  \u1080  \u1088 \u1077 \u1096 \u1077 \u1085 \u1080 \u1077  \u1082 \u1086 \u1085 \u1092 \u1083 \u1080 \u1082 \u1090 \u1085 \u1099 \u1093  \u1089 \u1080 \u1090 \u1091 \u1072 \u1094 \u1080 \u1081 .</li>\
+            </ul>\
+        </div>\
+\
+        <div class="job">\
+            <div class="job-header">\
+                <div class="job-title">\uc0\u1054 \u1092 \u1080 \u1094 \u1080 \u1072 \u1085 \u1090 </div>\
+                <div class="job-date">\uc0\u1052 \u1086 \u1089 \u1082 \u1074 \u1072 </div>\
+            </div>\
+            <div class="job-company">\uc0\u1056 \u1077 \u1089 \u1090 \u1086 \u1088 \u1072 \u1085  \'abHEDO\'bb</div>\
+            <ul>\
+                <li>\uc0\u1054 \u1073 \u1077 \u1089 \u1087 \u1077 \u1095 \u1077 \u1085 \u1080 \u1077  \u1089 \u1077 \u1088 \u1074 \u1080 \u1089 \u1072  \u1087 \u1088 \u1077 \u1084 \u1080 \u1072 \u1083 \u1100 \u1085 \u1086 \u1075 \u1086  \u1091 \u1088 \u1086 \u1074 \u1085 \u1103  \u1080  \u1079 \u1085 \u1072 \u1085 \u1080 \u1077  \u1088 \u1077 \u1089 \u1090 \u1086 \u1088 \u1072 \u1085 \u1085 \u1086 \u1081  \u1087 \u1089 \u1080 \u1093 \u1086 \u1083 \u1086 \u1075 \u1080 \u1080 .</li>\
+            </ul>\
+        </div>\
+    </section>\
+\
+    <section class="glass-card">\
+        <h2>\uc0\u1053 \u1072 \u1074 \u1099 \u1082 \u1080  \u1080  \u1071 \u1079 \u1099 \u1082 \u1080 </h2>\
+        <div class="skills-tag" style="margin-bottom: 25px;">\
+            <span class="tag">\uc0\u1050 \u1083 \u1080 \u1077 \u1085 \u1090 \u1089 \u1082 \u1080 \u1081  \u1089 \u1077 \u1088 \u1074 \u1080 \u1089 </span>\
+            <span class="tag">\uc0\u1044 \u1077 \u1083 \u1086 \u1074 \u1086 \u1077  \u1086 \u1073 \u1097 \u1077 \u1085 \u1080 \u1077 </span>\
+            <span class="tag">\uc0\u1056 \u1072 \u1073 \u1086 \u1090 \u1072  \u1089  \u1074 \u1086 \u1079 \u1088 \u1072 \u1078 \u1077 \u1085 \u1080 \u1103 \u1084 \u1080 </span>\
+            <span class="tag">\uc0\u1059 \u1074 \u1077 \u1088 \u1077 \u1085 \u1085 \u1086 \u1077  \u1074 \u1083 \u1072 \u1076 \u1077 \u1085 \u1080 \u1077  \u1055 \u1050 </span>\
+            <span class="tag">\uc0\u1057 \u1090 \u1088 \u1077 \u1089 \u1089 \u1086 \u1091 \u1089 \u1090 \u1086 \u1081 \u1095 \u1080 \u1074 \u1086 \u1089 \u1090 \u1100 </span>\
+            <span class="tag">\uc0\u1057 \u1080 \u1089 \u1090 \u1077 \u1084 \u1072 \u1090 \u1080 \u1079 \u1072 \u1094 \u1080 \u1103  \u1076 \u1072 \u1085 \u1085 \u1099 \u1093 </span>\
+        </div>\
+        <div class="contact-grid">\
+            <div class="contact-item">\uc0\u1056 \u1091 \u1089 \u1089 \u1082 \u1080 \u1081  \'97 <b>\u1057 \u1074 \u1086 \u1073 \u1086 \u1076 \u1085 \u1086 </b></div>\
+            <div class="contact-item">\uc0\u1050 \u1099 \u1088 \u1075 \u1099 \u1079 \u1089 \u1082 \u1080 \u1081  \'97 <b>\u1057 \u1074 \u1086 \u1073 \u1086 \u1076 \u1085 \u1086 </b></div>\
+            <div class="contact-item">\uc0\u1040 \u1085 \u1075 \u1083 \u1080 \u1081 \u1089 \u1082 \u1080 \u1081  \'97 <b>\u1041 \u1072 \u1079 \u1086 \u1074 \u1099 \u1081 </b></div>\
+        </div>\
+    </section>\
+\
+    <section class="glass-card">\
+        <h2>\uc0\u1054 \u1073 \u1088 \u1072 \u1079 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077 </h2>\
+        <div class="job">\
+            <div class="job-title">\uc0\u1050 \u1099 \u1088 \u1075 \u1099 \u1079 \u1089 \u1082 \u1072 \u1103  \u1075 \u1086 \u1089 \u1091 \u1076 \u1072 \u1088 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1072 \u1103  \u1084 \u1077 \u1076 \u1080 \u1094 \u1080 \u1085 \u1089 \u1082 \u1072 \u1103  \u1072 \u1082 \u1072 \u1076 \u1077 \u1084 \u1080 \u1103  (\u1050 \u1043 \u1052 \u1040 )</div>\
+            <div class="job-company">\uc0\u1057 \u1087 \u1077 \u1094 \u1080 \u1072 \u1083 \u1100 \u1085 \u1086 \u1089 \u1090 \u1100 : \u1057 \u1090 \u1086 \u1084 \u1072 \u1090 \u1086 \u1083 \u1086 \u1075 \u1080 \u1103 </div>\
+            <div class="job-date">2022 \'97 \uc0\u1087 \u1086  \u1085 \u1072 \u1089 \u1090 \u1086 \u1103 \u1097 \u1077 \u1077  \u1074 \u1088 \u1077 \u1084 \u1103 </div>\
+        </div>\
+    </section>\
+</div>\
+\
+</body>\
+</html>}
